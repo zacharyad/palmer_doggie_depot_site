@@ -1,3 +1,10 @@
+:root {
+  --secondary-blue: #90C8D8;
+  --main-blue: #215968;
+  --light-white: #ffffff;
+  --text-color-primary: #232323;
+}
+
 html,
 body {
   padding: 0;
@@ -15,12 +22,70 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.outer-nav-wrapper {
+  display: flex;
+  align-items: flex-end;
 }
+
+.nav-link-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+footer img {
+  width: 10vw;
+}
+
+footer > div {
+  display: flex;
+  padding: 10px;
+}
+
+
+.faq-list .faq {
+  background-color: var(--secondary-blue);
+  border-radius: 1rem;
+  margin: 0 0 1.5rem 0;
+  /* hack for border radius on parent */
+  overflow: hidden;
+  z-index: 1;
+}
+.faq-list .faq .faq-header {
+  padding: 1.5rem;
+  /* Give an impression of button to the faq header */
+  cursor: pointer;
+}
+.faq-list .faq .faq-header .faq-title {
+  color: var(--text-color-primary);
+  font-size: 1.2em;
+}
+.faq-list .faq .faq-body {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+.faq-list .faq .faq-body .faq-text {
+  text-align: justify;
+  font-size: 1em;
+  color: var(--text-color-primary);
+  padding: 0 1.5rem 1.5rem;
+
+  transition: opacity 0.5s;
+}
+
+/* expanded faq item */
+.faq-list .expanded .faq-text {
+
+  color: black;
+  opacity: 1;
+  overflow: visible;
+
+}
+

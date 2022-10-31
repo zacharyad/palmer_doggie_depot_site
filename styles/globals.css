@@ -1,16 +1,27 @@
-:root {
+/* :root {
   --secondary-blue: #90C8D8;
   --main-blue: #215968;
   --light-white: #ffffff;
   --text-color-primary: #232323;
+  --text-faded-bg-color:  #21596858;
+  --screenhiehgt:
 }
+
 
 html,
 body {
   padding: 0;
   margin: 0;
+  min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+
 }
 
 a {
@@ -25,6 +36,7 @@ a {
 .outer-nav-wrapper {
   display: flex;
   align-items: flex-end;
+  padding: 2rem;
 }
 
 .nav-link-wrapper {
@@ -33,19 +45,23 @@ a {
   justify-content: space-around;
 }
 
-footer {
+.faq-page {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-footer img {
-  width: 10vw;
+.faq-list {
+  width: 75%;
 }
 
-footer > div {
+.faq {
   display: flex;
-  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
 }
 
 
@@ -53,13 +69,11 @@ footer > div {
   background-color: var(--secondary-blue);
   border-radius: 1rem;
   margin: 0 0 1.5rem 0;
-  /* hack for border radius on parent */
   overflow: hidden;
   z-index: 1;
 }
 .faq-list .faq .faq-header {
   padding: 1.5rem;
-  /* Give an impression of button to the faq header */
   cursor: pointer;
 }
 .faq-list .faq .faq-header .faq-title {
@@ -80,7 +94,6 @@ footer > div {
   transition: opacity 0.5s;
 }
 
-/* expanded faq item */
 .faq-list .expanded .faq-text {
 
   color: black;
@@ -89,3 +102,117 @@ footer > div {
 
 }
 
+footer {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+footer img {
+  width: 10vw;
+}
+
+footer > div {
+  display: flex;
+  padding: 10px;
+}
+
+.nav-link-wrapper-hidden {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-link-wrapper-hidden {
+  opacity: 0;
+  height: 0;
+} */
+
+/* @media only screen and (max-width: 1200px) {
+  .nav-link-wrapper {
+    display: none;
+  }
+
+  .nav-link-wrapper-hamburger {
+    position: relative;
+    z-index: 300;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-faded-bg-color);
+  }
+  
+  ul.nav-link-wrapper-hamburger {
+    padding: 20px 0;
+    background-origin: green;
+    
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 2em;
+    position: absolute;
+    top: 5em;
+    right: 5em;
+  }
+
+  .hamburger div {
+    margin: 5px;
+  }
+
+ 
+  .hamburger-line1{
+    width: 30px;
+    height: .15em;
+    background-color: black;
+  }
+
+  .hamburger-line2{
+    width: 50px;
+    height: .15em;
+    background-color: black;
+  }
+
+  .hamburger-line3{
+    width: 40px;
+    height: .15em;
+    background-color: black;
+  }
+
+  
+  .outer-nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .toggleOffPageUnderHamburger {
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    right: 0;
+    opacity: .50;
+    background-color: white;
+  }
+
+  /* .nav-link-wrapper-small{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+} 
+
+*/

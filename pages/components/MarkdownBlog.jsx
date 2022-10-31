@@ -7,7 +7,7 @@ const MarkdownBlog = () => {
     return (
         <>
             <nav>
-                this is a blog nav
+                Coming soon!
             </nav>
         </>
     )

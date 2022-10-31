@@ -2,7 +2,7 @@ import MarkdownBlog from "./components/MarkdownBlog"
 const Blog = () => {
     return (
         <>
-        <h1>Page Blog</h1>
+        <h1>Palmer Doggie Blog</h1>
         <MarkdownBlog />
         </>
     )

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useEffect } from "react";
-import { parseDomElemToAddToggleClass, findDomElementToAddEventToToggleExpandClass } from "./utils/domHelpers"
+import { parseDomElemToAddToggleClass, findDomElementToAddEventToToggleExpandClass } from "./api/utils/domHelpers"
+
 const Faqs = () => {
 
     useEffect(() => {

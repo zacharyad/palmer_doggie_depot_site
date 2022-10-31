@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import Link from "next/link"
-
+import Image from 'next/image'
 const Navbar = () => {
     useEffect(()=>{
         return () => toggleHamburgerMenu(false)
@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className="outer-nav-wrapper">
-                <Link href="/"><img src="./LOGO.svg" alt="Palmer Doggie Depot Logo - Name with silhouette of a dog playing" /></Link>
+                <Link href="/"><Image height={50} width={200} src="/LOGO.svg" alt="Palmer Doggie Depot Logo - Name with silhouette of a dog playing" /></Link>
                 <ul className="nav-link-wrapper">
                     <l1><Link href="/">Home</Link></l1>
                     <l1><Link href="/About">About</Link></l1>

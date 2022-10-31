@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 const Layout = ({children}) => {
 
     return (
-    <div className='app-wrapper'>
+    <div className='flex flex-col h-screen justify-between'>
         <Navbar />
 
         <div className={styles.container}>

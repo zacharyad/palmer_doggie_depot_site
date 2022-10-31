@@ -22,7 +22,6 @@ export function parseDomElemToAddToggleClass(e) {
 
 export function findDomElementToAddEventToToggleExpandClass() {
   return [...document.getElementsByClassName("faq")].map((elem) => {
-    console.log(elem);
     elem.addEventListener("click", parseDomElemToAddToggleClass);
     return elem;
   });

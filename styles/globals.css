@@ -1,4 +1,8 @@
-/* :root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+:root {
   --secondary-blue: #90C8D8;
   --main-blue: #215968;
   --light-white: #ffffff;
@@ -42,7 +46,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-around;
-}
+} */
 
 .faq-page {
   display: flex;
@@ -89,25 +93,22 @@ a {
   font-size: 1em;
   color: var(--text-color-primary);
   padding: 0 1.5rem 1.5rem;
-
   transition: opacity 0.5s;
 }
 
 .faq-list .expanded .faq-text {
-
   color: black;
   opacity: 1;
   overflow: visible;
-
 }
 
+/* 
 footer {
   width: 100%;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  flex-shrink: 0;
 }
 
 footer img {
@@ -117,7 +118,7 @@ footer img {
 footer > div {
   display: flex;
   padding: 10px;
-}
+} */
 
 .nav-link-wrapper-hidden {
   display: none;
@@ -130,9 +131,9 @@ footer > div {
 .nav-link-wrapper-hidden {
   opacity: 0;
   height: 0;
-} */
+} 
 
-/* @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   .nav-link-wrapper {
     display: none;
   }
@@ -206,7 +207,7 @@ footer > div {
     background-color: white;
   }
 
-  /* .nav-link-wrapper-small{
+  .nav-link-wrapper-small{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,4 +215,3 @@ footer > div {
   } 
 } 
 
-*/

@@ -8,7 +8,7 @@ function toggleNodeClassName(node, name) {
   }
 }
 
-export function parseDomElemToAddToggleClass(e) {
+function parseDomElemToAddToggleClass(e) {
   let node = e.target.parentNode;
 
   if (node.classList.contains("faq")) {
@@ -20,10 +20,15 @@ export function parseDomElemToAddToggleClass(e) {
   }
 }
 
-export function findDomElementToAddEventToToggleExpandClass() {
+function findDomElementToAddEventToToggleExpandClass() {
   return [...document.getElementsByClassName("faq")].map((elem) => {
     console.log(elem);
     elem.addEventListener("click", parseDomElemToAddToggleClass);
     return elem;
   });
 }
+
+export default {
+  findDomElementToAddEventToToggleExpandClass,
+  parseDomElemToAddToggleClass,
+};

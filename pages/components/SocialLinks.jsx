@@ -5,11 +5,7 @@ const SocialLinks = () => {
     <div className="mx-auto my-4">
       <h3>Follow Us!</h3>
       <div className="flex justify-evenly mt-2">
-        <a
-          href="http://www.twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="http://www.twitter.com" target="_blank" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
@@ -21,11 +17,7 @@ const SocialLinks = () => {
             />
           </svg>
         </a>
-        <a
-          href="http://www.instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="http://www.instagram.com" target="_blank" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
@@ -37,11 +29,7 @@ const SocialLinks = () => {
             />
           </svg>
         </a>
-        <a
-          href="http://www.facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="http://www.facebook.com" target="_blank" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 320 512"

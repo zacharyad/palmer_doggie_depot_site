@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const SocialLinks = () => {
   return (
-    <div className="mx-auto my-4 flex flex-col">
+    <div className="mx-auto my-4 flex flex-col w-full">
       <h3 className="self-center pb-2">Follow Us!</h3>
-      <div className="flex justify-evenly mt-2">
+      <div className="flex justify-around mt-2">
         <a href="http://www.twitter.com">
           <svg
             xmlns="http://www.w3.org/2000/svg"

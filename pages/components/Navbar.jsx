@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+    <nav className="bg-white backdrop-blur-sm bg-opacity-100 z-10 md:bg-opacity-80 border-gray-200 px-2 sm:px-4 py-2 rounded fixed w-screen">
       <div className="container flex flex-wrap justify-evenly md:justify-around items-center mx-auto">
         <Link href="/">
           <Image
@@ -72,11 +72,11 @@ const Navbar = () => {
 
         <div
           className={`${
-            isNavOpen ? "z-10 absolute top-48" : "hidden"
+            isNavOpen ? "z-100 absolute top-48" : "hidden"
           } motion-reduce:transition-none w-full lg:block lg:w-auto`}
           id="navbar-default"
         >
-          <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 lg:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+          <ul className="flex flex-col p-2 bg-gray-50 rounded-lg border border-gray-100 lg:flex-row lg:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
             <l1>
               <Navlink text={"Home"} href="/" urlPath={router.pathname} />
             </l1>
@@ -118,9 +118,16 @@ const Navbar = () => {
               />
             </l1>
           </ul>
+          <div
+            onClick={() => setIsNavOpen(false)}
+            className={`${
+              isNavOpen
+                ? "absolute t-0 h-screen w-screen bg-white opacity-70 backdrop-blur-3xl"
+                : "hidden"
+            }`}
+          />
         </div>
       </div>
-      <div className={`${isNavOpen ? "w-screen h-screen" : "hidden"}`} />
     </nav>
   );
 };

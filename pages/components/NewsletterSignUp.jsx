@@ -7,7 +7,10 @@ const NewsletterSignup = () => {
 
   function postToEmail(e) {
     e.preventDefault();
-    console.log("E: ", email);
+    if (!email.includes("@")) {
+      setUserMsg("You must Supply something to play fetch with.....");
+      return;
+    }
     setEmail("");
     setUserMsg("Thank you for signing up!");
     setSubmittedEmail(true);

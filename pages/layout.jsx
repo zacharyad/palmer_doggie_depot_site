@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <div className="flex flex-col h-screen justify-between">
       <Navbar />
-      <div>
+      <div className="mt-64">
         <main>{children}</main>
       </div>
       <SupportCard />

@@ -8,6 +8,7 @@ const SocialLinks = () => {
         <a
           href="http://www.twitter.com"
           target="_blank"
+          rel="noreferrer"
           rel="noopener noreferrer"
         >
           <svg
@@ -24,6 +25,7 @@ const SocialLinks = () => {
         <Link
           href="http://www.instagram.com"
           target="_blank"
+          rel="noreferrer"
           rel="noopener noreferrer"
         >
           <svg
@@ -40,6 +42,7 @@ const SocialLinks = () => {
         <a
           href="http://www.facebook.com"
           target="_blank"
+          rel="noreferrer"
           rel="noopener noreferrer"
         >
           <svg

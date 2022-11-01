@@ -1,15 +1,13 @@
-import Link from "next/link";
-import SocialLinks from "./components/SocialLinks";
-
 const JoinThePack = () => {
   return (
     <div className="mx-auto bg-gray-50 w-3/4">
       <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          <span className="block">Park Information </span>
-          <span className="block text-cyan-600">& Safety</span>
+          <span className="block">Join </span>
+          <span className="block text-cyan-600">the Pack</span>
         </h2>
         <div className="mt-8">
+          <p className="font-semibold">Efforts</p>
           <p>
             PDD is sustained solely by individual donations and grants. We
             receive no funding from the City’s Parks Department; instead we rely
@@ -19,12 +17,14 @@ const JoinThePack = () => {
             improvements include a doggie water fountain, shading, and
             landscaping – but we need your help for these items!
           </p>
-          <h2>Be Part of the Pack!</h2>
+          <br />
+          <h2 className="font-semibold">Be Part of the Pack!</h2>
           <p>
             Want to create the best park around for our beloved pooches? Here’s
             how you can help.
           </p>
-          <ul>
+          <br />
+          <ul className="flex flex-col justify-evenly">
             <li>
               <strong>First and foremost, use the park! </strong>
               Regularly use the park and allow your furry friend(s) to exercise
@@ -59,27 +59,6 @@ const JoinThePack = () => {
               more possible through community support.
             </li>
           </ul>
-
-          <div className="signup-wrapper">
-            <form action="">
-              <div>
-                <label htmlFor="email-mailinglist">
-                  Sign up for the newsletter
-                </label>
-                <input id="email-mailinglist" type="text" />
-              </div>
-              <button onClick={() => alert("Dummy signup")}>Sign up</button>
-            </form>
-          </div>
-
-          <Link href="/Blog">Check out what is going on at the park!</Link>
-
-          <SocialLinks />
-
-          <div>
-            <h3>Support the Park!</h3>
-            <button onClick={() => alert("Dummy dontate")}>Donate</button>
-          </div>
         </div>
       </div>
     </div>

@@ -1,16 +1,9 @@
-
 const MarkdownBlog = () => {
-    let allBlogFileNames = 3;
+  return (
+    <>
+      <p>Coming soon!</p>
+    </>
+  );
+};
 
-
-    console.log("allBlogFileNames: ", allBlogFileNames)
-    return (
-        <>
-            <nav>
-                Coming soon!
-            </nav>
-        </>
-    )
-}
-
-export default MarkdownBlog
+export default MarkdownBlog;

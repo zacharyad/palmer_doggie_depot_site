@@ -24,6 +24,7 @@ const Acknowledgments = () => {
               <a
                 className="underline text-cyan-500"
                 target="_blank"
+                rel="noreferrer"
                 href="http://amritayogawellness.com/"
               >
                 Amrita Yoga &amp; Wellness
@@ -31,6 +32,7 @@ const Acknowledgments = () => {
               <a
                 className="underline text-cyan-500"
                 target="_blank"
+                rel="noreferrer"
                 href="http://www.artdeptphilly.com/"
               >
                 <span>The Art Dept</span>
@@ -39,6 +41,7 @@ const Acknowledgments = () => {
               <a
                 className="underline text-cyan-500"
                 target="_blank"
+                rel="noreferrer"
                 href="http://cedarpointbarandkitchen.com/"
               >
                 Cedar Point Bar &amp; Kitchen
@@ -46,6 +49,7 @@ const Acknowledgments = () => {
               <a
                 className="underline text-cyan-500"
                 target="_blank"
+                rel="noreferrer"
                 href="http://coffeehouseco.com/"
               >
                 Coffee House Too
@@ -53,6 +57,7 @@ const Acknowledgments = () => {
               <a
                 className="underline text-cyan-500"
                 target="_blank"
+                rel="noreferrer"
                 href="http://evilgeniusbeer.com/"
               >
                 The El Bar Evil Genius Beer Company
@@ -60,6 +65,7 @@ const Acknowledgments = () => {
               <a
                 className="underline text-cyan-500"
                 target="_blank"
+                rel="noreferrer"
                 href="http://www.fettesauphilly.com/"
               >
                 Fette Sau
@@ -67,6 +73,7 @@ const Acknowledgments = () => {
               <a
                 className="underline text-cyan-500"
                 target="_blank"
+                rel="noreferrer"
                 href="http://fishtownpharmacy.com/"
               >
                 Fishtown Pharmacy
@@ -74,6 +81,7 @@ const Acknowledgments = () => {
               <a
                 className="underline text-cyan-500"
                 target="_blank"
+                rel="noreferrer"
                 href="http://www.gryphoncoffee.com/"
               >
                 The Groove Hound Gryphon Cafe
@@ -81,6 +89,7 @@ const Acknowledgments = () => {
               <a
                 className="underline text-cyan-500"
                 target="_blank"
+                rel="noreferrer"
                 href="https://urbanaxes.com/"
               >
                 Johnny Brenda’s Muttropolitan Pet Sitting Park Bench Dog Daycare

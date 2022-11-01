@@ -15,7 +15,7 @@ let dummyData = [
   },
   {
     id: 2,
-    title: "What is the park’s exact location?",
+    title: "Where is the park located?",
     content:
       "Palmer Doggie Depot is located at 37 E Palmer St, Philadelphia, PA 19125 (on E Palmer St at Blair St). Check out our Park Info page!",
   },
@@ -95,7 +95,9 @@ const Faqs = () => {
           {dummyData.length ? (
             dummyData.map((faq) => {
               return (
-                <FaqItem key={faq.id} title={faq.title} content={faq.content} />
+                <div key={faq.id}>
+                  <FaqItem title={faq.title} content={faq.content} />
+                </div>
               );
             })
           ) : (

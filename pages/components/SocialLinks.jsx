@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const SocialLinks = () => {
   return (
-    <div className="mx-auto my-4">
-      <h3>Follow Us!</h3>
+    <div className="mx-auto my-4 flex flex-col">
+      <h3 className="self-center pb-2">Follow Us!</h3>
       <div className="flex justify-evenly mt-2">
         <a href="http://www.twitter.com">
           <svg

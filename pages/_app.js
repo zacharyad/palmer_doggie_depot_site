@@ -1,8 +1,22 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Layout from "./layout";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    setIsLoaded(true);
+    console.log("entered");
+    return () => {
+      console.log("Exited");
+      setIsLoaded(false);
+    };
+  }, [router.pathname]);
+
   return (
     <>
       <Head>

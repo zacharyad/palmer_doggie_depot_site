@@ -10,14 +10,10 @@ const Navbar = () => {
 
   useEffect(() => {
     return () => setIsNavOpen(false);
-  }, []);
+  }, [router.pathname]);
 
   const onClickHamburgerMenu = () => {
     setIsNavOpen(() => !isNavOpen);
-  };
-
-  const selectionMade = () => {
-    setIsNavOpen(() => false);
   };
 
   return (
@@ -75,7 +71,6 @@ const Navbar = () => {
         </button>
 
         <div
-          onClick={selectionMade}
           className={`${
             isNavOpen ? "z-10 absolute top-48" : "hidden"
           } motion-reduce:transition-none w-full lg:block lg:w-auto`}

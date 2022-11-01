@@ -90,14 +90,13 @@ const Faqs = () => {
   return (
     <>
       <div className="faq-page">
-        <h3>Frequently Asked Questions</h3>
+        <h3 className="font-semibold underline">Frequently Asked Questions</h3>
+        <br />
         <div className="faq-list">
           {dummyData.length ? (
             dummyData.map((faq) => {
               return (
-                <div key={faq.id}>
-                  <FaqItem title={faq.title} content={faq.content} />
-                </div>
+                <FaqItem key={faq.id} title={faq.title} content={faq.content} />
               );
             })
           ) : (
